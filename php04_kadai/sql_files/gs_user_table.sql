@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: 2019 年 6 月 05 日 20:29
+-- Generation Time: 2019 年 6 月 12 日 20:43
 -- サーバのバージョン： 10.1.40-MariaDB
 -- PHP Version: 7.3.5
 
@@ -44,11 +44,16 @@ CREATE TABLE `gs_user_table` (
 --
 
 INSERT INTO `gs_user_table` (`id`, `name`, `lid`, `lpw`, `kanri_flg`, `life_flg`, `created`, `updated`) VALUES
-(2, '齊藤 朝秀', 'Tagataya', 'e61f341aa660099d51464c501618516a36eb9fca3005fffbad2938a8437b6f0e', 1, 0, '2019-06-05 18:55:22', '2019-06-05 18:55:22'),
-(3, '織田 信長', 'odanobu', '506c8e5842d3d03220313755df59d10d11a2eac7cbdee5bf146abb91a844f019', 0, 0, '2019-06-05 18:57:28', '2019-06-05 18:57:28'),
-(4, '武田 信玄', 'shingenT', 'a246ab6d7b3543b067746a7826e9e9feaf1228f003641abfc504c77906527ece', 0, 0, '2019-06-05 18:57:50', '2019-06-05 20:25:46'),
-(5, '豊臣 秀吉', 'hideToyotomi', 'f81e59aa278ade9ad635babc5c32b6e7d7ba68b9455d511be827038c0c2d494a', 0, 0, '2019-06-05 18:59:01', '2019-06-05 18:59:01'),
-(6, '明智 光秀', 'mitsuhideAkechi', '131381adceba8ff0b379514869a1141aa3925efe452377424df8f6d765c7ef08', 0, 0, '2019-06-05 18:59:36', '2019-06-05 18:59:36');
+(2, '齊藤 朝秀', 'saito', '$2y$10$xnURSv9k8HWkd7W7fdtm/.esBroR7P2t8WwbKLN5BUYQCNU0fVvdG', 1, 0, '2019-06-05 18:55:22', '2019-06-11 21:01:46'),
+(3, '織田 信長', 'oda', '$2y$10$fDtXsXZYWsGkbOY/WY8Zm.YFtlixPNvd7muN8a5B22sn3pQxP1miG', 0, 0, '2019-06-05 18:57:28', '2019-06-11 21:02:52'),
+(4, '武田 信玄', 'takeda', '$2y$10$jUWKl1g1YGUBzzZe/qzTVOGhDEtl2ULNVHi845ImgVqR5WUtyEmi.', 0, 0, '2019-06-05 18:57:50', '2019-06-11 21:03:35'),
+(5, '豊臣 秀吉', 'toyotomi', '$2y$10$vZembfVdToMkAzdpZtCbQeeVOEWxlxMEZzOPyPaQWoLLXwSTCPuni', 0, 0, '2019-06-05 18:59:01', '2019-06-11 21:07:22'),
+(6, '明智 光秀', 'akechi', '$2y$10$/8sxLFgjy7NswRR24psqbeXh/iJzzOk7O8EOMYxuXlSjqdbINO8Oq', 0, 0, '2019-06-05 18:59:36', '2019-06-11 21:07:34'),
+(7, '徳川 家康', 'tokugawa', '$2y$10$T/40bdGGi5wu1hchBvdRfuJUFGUr.ruFCx7yMa4vxVqeUSi2.Craq', 0, 0, '2019-06-06 09:09:44', '2019-06-12 20:27:55'),
+(8, '田中 角栄', 'tanaka', '$2y$10$s7gbM8CegA.Mg5e3qVjqFOyl4Djn.Qy80avMG9UgyqmJJ5Rg49RNS', 0, 0, '2019-06-08 15:12:22', '2019-06-11 21:08:05'),
+(12, '安倍 晋三', 'abe', '$2y$10$Fz8AFG.irpqRIJUcuukAsebdnyHwwMdfUNb4kzsxdH0bnce/Fo1eO', 0, 0, '2019-06-12 20:34:36', '2019-06-12 20:34:36'),
+(13, '竹中 尚人', 'takenaka', '$2y$10$XuYW69eONr4E.B50hhG0cuo18mh2JDXJeUV13iZOMv0F0sweOTv.i', 0, 0, '2019-06-12 20:35:28', '2019-06-12 20:35:28'),
+(14, '萩原 健一', 'hagiwara', '$2y$10$DxSVWDarw36iYuWbKwydReNPdqlgkCQ4oYMeYT7H.XMC.xqaHv5GC', 0, 0, '2019-06-12 20:36:16', '2019-06-12 20:36:16');
 
 --
 -- Indexes for dumped tables
@@ -68,7 +73,7 @@ ALTER TABLE `gs_user_table`
 -- AUTO_INCREMENT for table `gs_user_table`
 --
 ALTER TABLE `gs_user_table`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

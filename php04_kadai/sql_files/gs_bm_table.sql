@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: 2019 年 6 月 05 日 20:29
+-- Generation Time: 2019 年 6 月 12 日 20:43
 -- サーバのバージョン： 10.1.40-MariaDB
 -- PHP Version: 7.3.5
 
@@ -53,7 +53,9 @@ INSERT INTO `gs_bm_table` (`id`, `bookname`, `author`, `bookurl`, `comment`, `cr
 (11, 'Bootstrap4ファーストガイド', '相澤裕介', 'https://books.google.co.jp/books?isbn=487783432Xhttps://books.google.co.jp/books?isbn=487783432X', 'Bootstrap4についてのガイダンス。384ページ。', '2019-06-04 19:48:51', '2019-06-04 19:48:51'),
 (12, '超整理法', '野口悠紀雄', 'https://books.google.co.jp/books?id=tkwhAQAAMAAJ', '1990年台のベストセラー。分類はするな、時間軸で整理しろ、という目からウロコの提言。', '2019-06-04 21:02:51', '2019-06-05 13:11:14'),
 (13, 'ボッコちゃん', '星新一', 'https://books.google.co.jp/books?id=xtrIugEACAAJ', '星新一の代表作の一つ。', '2019-06-04 21:12:23', '2019-06-04 21:12:23'),
-(14, '証券アナリストのためのファイナンス理論入門', '佐野三郎', 'https://books.google.co.jp/books?isbn=4828304762', '証券アナリスト試験に必要なファイナンス理論の入門書。ビジネス教育出版社, 2013', '2019-06-05 13:38:00', '2019-06-05 13:38:00');
+(14, '証券アナリストのためのファイナンス理論入門', '佐野三郎', 'https://books.google.co.jp/books?isbn=4828304762', '証券アナリスト試験に必要なファイナンス理論の入門書。ビジネス教育出版社, 2013', '2019-06-05 13:38:00', '2019-06-05 13:38:00'),
+(15, '新釈現代文', '高田瑞穂', 'https://books.google.co.jp/books?isbn=4480092234', '伝説の大学受験国語参考書、ついに復刊。そこには、「たった一つのこと」しか説かれていない。それは、論の展開を正確に「追跡」して論旨を把握すること。1959年の刊行当時、知識偏重から論理重視への転換期にあった受験現代文の特質をみごとに捉えた、今に通じる画期的な方法だった。さらに、本書は「人間主義・合理主義・人格主義」を柱とする近代思想の啓蒙書でもあった。ポスト・モダン以降の思想が批判してやまない「近代」が志向していたものが忘れられつつある今こそ、本書を読む意義がある。20年以上も定番であり続けた名著に新たな命が宿るときが来た。', '2019-06-08 15:10:58', '2019-06-08 15:10:58'),
+(17, '微分積分学', '齋藤 正彦', 'https://books.google.co.jp/books?isbn=4489007329', '新しい驚きと大胆なアイデア溢れる決定版', '2019-06-12 19:51:01', '2019-06-12 19:51:01');
 
 --
 -- Indexes for dumped tables
@@ -73,7 +75,7 @@ ALTER TABLE `gs_bm_table`
 -- AUTO_INCREMENT for table `gs_bm_table`
 --
 ALTER TABLE `gs_bm_table`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
