@@ -1,3 +1,9 @@
+<?php
+session_start(); //これを入れ忘れてエラーになった。講義と同じ過ち。
+include "../funcs.php";
+chkSsid();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,21 +14,14 @@
   <title>書籍登録</title>
 </head>
 <body>
+<header>
+  <div class="container">
+  <?php include("../menu.php"); ?>
+  </div>
+</header>
 <div class="container">
   <h2 class="mt-4 mb-4">書籍登録</h2>
-  <nav class="navbar navbar-expand navbar-light bg-light">
-    <span class="navbar-brand">Link LIST</span>
-    <ul class="nav">
-      <li class="nav-item"><span class="nav-link">齊藤さんこんちには</span></li>
-      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Food</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Drink</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Access</a></li>
-    </ul>
-  </nav>
-
   <form  method="post" action="confirm.php">
-    <br>
     <div class="form-group mb-4">
       <label for="bookname">書籍名</label>
       <input type="text" class="form-control" name= "bookname" id="bookname">
@@ -40,8 +39,6 @@
       <textarea rows="5" class="form-control" name= "comment" id="comment"></textarea>
     </div>
     <button type="submit" class="btn btn-outline-secondary">内容確認</button>　　
-    <input type="button" onclick="location.href='select.php'" value="リストへ" class="btn btn-outline-secondary">　　
-    <input type="button" onclick="location.href='index_user.php'" value="ユーザー登録へ" class="btn btn-outline-secondary">
   </form>
 </div>
 </body>
